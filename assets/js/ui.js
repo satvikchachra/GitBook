@@ -2,6 +2,7 @@ class UI {
     constructor() {
         this.profile = document.querySelector('.user-profile');
         this.repoGrid = document.querySelector('.repos-grid');
+        this.containerFluid = document.querySelector('.container-fluid');
     }
 
     clear() {
@@ -71,13 +72,21 @@ class UI {
     }
 
     showAlert(message, className) {
-        console.log(message);
+        document.querySelector('.latest-repos').style.display = 'none';
+
+        if (document.querySelector('.logo-dup') === null) {
+            const logo = document.createElement('img');
+            logo.className = 'logo-dup';
+            logo.setAttribute("src", "assets/img/github.png");
+            document.querySelector('.container-fluid').appendChild(logo);
+        }
+
         const div = document.createElement('div');
         div.className = className;
         div.appendChild(document.createTextNode(message));
         const parent = document.querySelector('body');
-        const footer = document.querySelector('footer');
-        parent.insertBefore(div, footer);
+        const nav = document.querySelector('nav');
+        parent.insertBefore(div, nav);
         setTimeout(() => {
             document.querySelector('.alert').remove()
         }, 3000);

@@ -24,9 +24,9 @@ class GitHub {
             });
 
         const profileData = await profileResponse.json();
-        console.log(profileData);
+        // console.log(profileData);
         const repoData = await repoResponse.json();
-        console.log(repoData);
+        // console.log(repoData);
 
         return {
             profile: profileData,
