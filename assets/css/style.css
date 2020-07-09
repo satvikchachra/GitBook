@@ -145,6 +145,10 @@ body {
     padding: 30px;
 }
 
+.hidden{
+    display: none;
+}
+
 footer {
     margin: 50px 0px;
     font-size: 16px;

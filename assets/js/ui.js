@@ -72,7 +72,8 @@ class UI {
     }
 
     showAlert(message, className) {
-        document.querySelector('.latest-repos').style.display = 'none';
+        document.querySelector('.latest-repos').classList.add('hidden');
+
 
         if (document.querySelector('.logo-dup') === null) {
             const logo = document.createElement('img');
@@ -88,7 +89,8 @@ class UI {
         const nav = document.querySelector('nav');
         parent.insertBefore(div, nav);
         setTimeout(() => {
-            document.querySelector('.alert').remove()
+            document.querySelector('.alert').remove();
+            document.querySelector('.latest-repos').classList.remove('hidden');
         }, 3000);
     }
 }
