@@ -3,7 +3,7 @@
 * The aim of this app is to help you search and navigate GitHub users.
 
 ### View Live Demo
-<pre><a href="https://satvikchachra.gitub.io/GitBook"><b>satvikchachra.gitub.io/GitBook</b></a></pre>
+<pre><a href="https://satvikchachra.github.io/GitBook"><b>https://satvikchachra.github.io/GitBook/</b></a></pre>
 
 ### Images
 <details>
