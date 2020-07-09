@@ -4,66 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>GitBook</title>
 
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="my-nav-container">
+            <div class="brand-container">
+                <div>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/github.png">
+                    </a>
+                </div>
+                <div class="nav-title"><a href="index.html">GitBook</a></div>
+            </div>
 
-
-    <nav class="navbar navbar-expand-sm bg-light">
-        <ul class="navbar-nav">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/github.png" style="width: 40px;">
-                GitBook
-            </a>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" id="usr-nav" type="text" placeholder="Username">
-                <button class="btn btn-primary" id="submit-btn-nav">Search</button>
-            </form>
-        </ul>
+            <div class="form-container">
+                <form class="form-inline">
+                    <input id="usr-nav" type="text" placeholder="Username">
+                    <button class="btn btn-primary" id="submit-btn-nav">Search</button>
+                </form>
+            </div>
+        </div>
     </nav>
 
-    <div class="logo-container">
-        <img src="assets/img/github.png">
-    </div>
-    <div class="header">
-        <h1 class="font-weight-bolder text-center">GitBook</h1>
-    </div>
-
-    <div class="form-container">
-        <div class="form-group">
-            <input type="text" class="form-control" id="usr" placeholder="Username">
+    <div class="main">
+        <div class="logo-container">
+            <img class="logo" src="assets/img/github.png">
         </div>
-        <button type="submit" id="submit-btn" class="btn btn-primary">Search</button>
+        <div class="header">
+            GitBook
+        </div>
+
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Username">
+            </div>
+            <button type="submit" id="submit-btn" class="btn btn-primary">Search</button>
+        </div>
+
     </div>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="user-profile">
 
-                </div>
-            </div>
-            <div class="col-lg-9 repos-grid">
-                <div class="card-columns">
+        <div class="user-profile"></div>
 
-                </div>
-            </div>
-        </div>
+        <h1>Latest Repositories</h1>
+        <div class="repos-grid"></div>
 
     </div>
 
+    <footer>
+        <div class="made-with">
+            Made with ❤️ by <a href="https://github.com/satvikchachra">Satvik Chachra</a>
+        </div>
+
+        <div class="connect-with">
+            Connect with me:
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.github.com/satvikchachra">
+                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.twitter.com/satvik_codes">
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/satvikchachra">
+                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="assets/js/GitHub.js"></script>
+    <script src="assets/js/ui.js"></script>
     <script src="assets/js/main.js"></script>
+
     <script src="https://use.fontawesome.com/f307a533b4.js"></script>
 
 
 
 </body>
+
 </html>
