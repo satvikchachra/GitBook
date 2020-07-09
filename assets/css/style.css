@@ -1,61 +1,252 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&family=Roboto:wght@400;500&display=swap');
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 16px;
     text-align: center;
+    margin: 0px;
 }
 
-.navbar{
+.navbar {
+    border-bottom: 1px solid #ced4da;
     display: none;
-    margin: 0px 0px 50px 0px;
 }
 
-.nav-item img{
-    height: 50px;
-    width: 60px;
+.my-nav-container {
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
+    background-color: #dfe6e9;
 }
 
-.logo-container {
+.my-nav-container, .brand-container {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.brand-container {
+    margin-right: 30px;
+}
+
+.main {
+    margin-top: 100px;
     text-align: center;
-    margin: 100px 0px 30px 0px;
 }
 
-.logo-container img {
+.logo {
     height: 200px;
     width: 240px;
 }
 
+.header {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
 .form-container {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
 }
 
-.form-container button {
-    display: inline-flex;
-    margin: 0px 10px;
-    height: 38px;
-}
-
-.form-group {
+#usr, #usr-nav {
     width: 400px;
+    padding: 8px 10px;
+    margin: 2px 10px 10px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 16px;
 }
 
-.repo-analytics div {
-    margin: 0px 8px;
+#usr-nav:focus, #usr:focus {
+    outline: none;
+    border: 2px solid #81ecec;
+}
+
+.nav-title {
+    font-size: 20px;
+    padding: 8px 10px;
+    margin: 0px;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 32px;
+    padding: 8px 10px;
+    vertical-align: baseline;
+    margin: 0px;
+}
+
+#submit-btn, #submit-btn-nav {
+    font-size: 16px;
+    margin: 2px 10px 10px 10px;
+    color: #ffffff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 0.25rem;
+    padding: 8px 14px;
+    border-style: none;
+}
+
+#submit-btn:hover {
+    cursor: pointer;
+}
+
+.repos-grid {
+    display: block;
+}
+
+.card {
+    border: 1px solid #ced4da;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.profile-card {
+    width: 600px;
+    padding: 40px;
+}
+
+.profile-analytics {
+    display: flex;
+    justify-content: center;
 }
 
 .profile-analytics div {
     margin: 0px 8px;
 }
 
-.user-profile .card {
-    width: 252px;
+.repo-analytics div {
+    margin: 0px 8px;
 }
 
-.user-profile img {
-    height: 250px;
-    width: 250px;
+.profile-card img {
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
 }
 
-.user-profile .card {
-    border: none;
+.repo-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.repo-card {
+    width: 600px;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+footer {
+    margin: 50px 0px;
+    font-size: 16px;
+}
+
+.nav-title a:link, a:visited, a:hover, a:active, footer a:link, a:visited, a:hover, a:active {
+    color: #1b11e4;
+    text-decoration: none;
+}
+
+.social-icons a {
+    margin: 10px;
+}
+
+.connect-with {
+    margin: 10px 0px 20px 0px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container-fluid {
+    display: none;
+    padding: 16px;
+    margin-top: 100px;
+}
+
+.sticky+.container-fluid {
+    padding-top: 60px;
+}
+
+@media screen and (max-width: 2560px) {
+    .my-nav-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .my-nav-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .my-nav-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .my-nav-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #usr {
+        width: 200px;
+    }
+    .logo {
+        height: 160px;
+        width: 200px;
+    }
+    .my-nav-container {
+        display: block;
+        width: 100%;
+    }
+    #usr-nav {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #usr {
+        width: 180px;
+    }
+    .logo {
+        height: 160px;
+        width: 200px;
+    }
+    .my-nav-container {
+        display: block;
+        width: 100%;
+    }
+    #usr-nav {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #usr {
+        width: 150px;
+    }
+    .logo {
+        height: 160px;
+        width: 200px;
+    }
+    .my-nav-container {
+        display: block;
+        width: 100%;
+    }
+    #usr-nav {
+        width: 120px;
+    }
+    .profile-card, .repo-card {
+        width: 220px;
+    }
 }
